@@ -1,80 +1,81 @@
 /********** Base styles **********/
 * {
-    box-sizing: border-box;
-    font-family: sans-serif;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin: 50px 0px 20px 0px;
+  text-align: center;
+  font-size: 175%;
+}
+
+/* Format title regions for each section. */
+h2 {
+  float: right;
+  width: 150px;
+  margin: 0px;
+  font-size: 125%;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding: 5px;
+}
+
+/* Add background/font color to each section title region. */
+#chicken {
+  background-color: #D59998;
+}
+#beef {
+  background-color: #C24643;
+  color: white;
+}
+#sushi {
+  background-color: #E5D298;
+}
+
+/* Format text region for each section */
+p {
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+  margin: 0px;
+  color: black;
+  clear: right;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/* General section format. */
+div.row > div {
+    float: left;
+    background-color: #999999;
+    border: 1px solid black;
+    margin: 1%;
+}
+
+/********** Desktop version **********/
+@media (min-width: 992px) {
+  .col-desktop {
+    width: 31.33%;
   }
-  
-  h1 {
-    margin: 30px 0px 30px 0px;
-    text-align: center;
-    font-size: 175%;
+}
+
+/********** Tablet version **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-tablet-half {
+    width: 48%;
   }
-  
-  /* Format title regions for each section. */
-  h2 {
-    float: right;
-    width: 150px;
-    margin: 0px;
-    font-size: 125%;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
-    text-align: center;
+  .col-table-full {
+    width: 98%;
   }
-  
-  /* Add background/font color to each section title region. */
-  #chicken {
-    background-color: #D59998;
+}
+
+/********** Mobile version **********/
+@media (max-width: 767px) {
+  .col-mobile {
+    width: 98%;
   }
-  #beef {
-    background-color: #C24643;
-    color: white;
-  }
-  #sushi {
-    background-color: #E5D298;
-  }
-  
-  /* Format text region for each section */
-  p {
-    width: 100%;
-    padding: 10px 20px 10px 20px;
-    margin: 0px;
-    color: black;
-    clear: right;
-  }
-  
-  /* Simple Responsive Framework. */
-  .row {
-    width: 100%;
-  }
-  
-  /* General section format. */
-  div.row > div {
-      float: left;
-      background-color: #999999;
-      border: 1px solid black;
-      margin: 1%;
-  }
-  
-  /********** Desktop version **********/
-  @media (min-width: 992px) {
-    .col-desktop {
-      width: 31.33%;
-    }
-  }
-  
-  /********** Tablet version **********/
-  @media (min-width: 768px) and (max-width: 991px) {
-    .col-tablet-half {
-      width: 48%;
-    }
-    .col-table-full {
-      width: 98%;
-    }
-  }
-  
-  /********** Mobile version **********/
-  @media (max-width: 767px) {
-    .col-mobile {
-      width: 98%;
-    }
-  }
+}
