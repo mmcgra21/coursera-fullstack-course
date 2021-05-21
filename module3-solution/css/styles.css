@@ -7,13 +7,19 @@ h2 {
     margin-top: 20px;
     margin-bottom: 40px;
 }
-h4 {
+h3 {
     padding-top: 10px;
     margin-bottom: 0px;
 }
 p {
     padding: 20px;
     color: #000;
+}
+#nav-title {
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+    width: auto;
 }
 .food-item-section {
     background-color: #999999;
