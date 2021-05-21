@@ -21,11 +21,6 @@ p {
     height: auto;
     width: auto;
 }
-.food-item-section {
-    background-color: #999999;
-    margin-bottom: 15px;
-    padding: 0px;
-}
 #header-nav {
     background-color: #999999;
     border-radius: 0;
@@ -83,4 +78,10 @@ p {
 }
 #main-content {
     color: #000;
+    padding: 15px;
+}
+.food-item-section {
+    background-color: #999999;
+    padding: 0px;
+    border: 15px solid #fff;
 }
