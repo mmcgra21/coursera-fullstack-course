@@ -12,14 +12,13 @@ h4 {
     margin-bottom: 0px;
 }
 p {
-    width: 100%;
     padding: 20px;
+    color: #000;
 }
 .food-item-section {
     background-color: #999999;
     margin-bottom: 15px;
     padding: 0px;
-    color: #000;
 }
 #header-nav {
     background-color: #999999;
@@ -72,4 +71,7 @@ p {
 }
 #menu-items-row {
     margin: 0px;
+}
+#main-content {
+    color: #000;
 }
