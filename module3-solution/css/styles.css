@@ -1,19 +1,13 @@
-/*
-* {
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
 h1 {
+    float: left;
     color: #000;
-    margin: 20px 0px 0px 0px;
+    margin: 30px;
 }
 h2 {
-    text-align: center;
     margin-top: 20px;
     margin-bottom: 40px;
 }
 h4 {
-    text-align: center;
     padding-top: 10px;
     margin-bottom: 0px;
 }
@@ -23,64 +17,58 @@ p {
 }
 .food-item-section {
     background-color: #999999;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-bottom: 15px;
+    padding: 0px;
 }
 #header-nav {
     background-color: #999999;
+    border-radius: 0;
     border-top: 5px solid #000;
     border-bottom: 5px solid #000;
+    border-left: none;
+    border-right: none;
 }
-*/
-div > p {
-	text-align: justify;
+#nav-container {
+    padding: 0px;
 }
-
-.content-cell {
-	background-color: #BBDDBB;
-	margin-bottom: 15px;
-	padding: 10px 15px;
+#menu-button {
+    margin: 30px;
+    padding: 10px;
+    border: 1px solid #000;
 }
-
-.content-cell h2 {
-	margin-top: -5px;
+#menu-button span {
+    background-color: #000;
 }
-
-/* Not XS screen */
-@media (min-width:768px){
-	#collapsable-nav {
-		visibility: hidden;
-	}
+#menu-button:hover {
+    background-color: #fff;
 }
-
-/* XS screen */
-@media (max-width:767px){
-	
-	.navbar-brand {
-		margin-left: 15px;
-	}
-	
-	.content-cell {
-		margin-left: 15px;
-		margin-right: 15px;
-	}
-	
-	#collapsable-nav {
-		background-color: #BBEABB;
-	}
-	
-	#nav-list {		
-		margin-bottom: 1px;
-		margin-top: 0px;
-	}
-	
-	#nav-list li{
-		text-align: center;
-		border: 1px solid #559955;
-		margin-bottom:-1px;
-	}
-	#nav-list li:hover{
-		font-weight: bold;
-		background-color: #BBDDBB;
-	}
+#menu-button:focus {
+    background-color: #999999;
+    border: 1px solid #fff;
+}
+#menu-button:focus span {
+    background-color: #fff;
+}
+#collapsable-nav {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+#collapsable-nav a {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    font-size: 1.5em;
+    border-top: 1px solid #000;
+    margin: 0px;
+}
+#nav-list {
+    margin: 0px;
+    border-top: 4px solid #000;
+    border-right: 5px solid #000;
+    border-bottom: none;
+    border-left: 5px solid #000;
+}
+#menu-items-row {
+    margin: 0px;
 }
